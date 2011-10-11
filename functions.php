@@ -146,9 +146,7 @@ if( ! function_exists('lebouchon_submit_landing') ):
 						
 						$table = $wpdb->prefix."newsletter_signups";
 					
-						$result = $wpdb->query("SHOW TABLES LIKE '$table'");
-						if($result):
-							if(mysql_num_rows($result) <= 0):
+						if( mysql_num_rows( mysql_query("SHOW TABLES LIKE '".$table."'"))):
 								
 								$wpdb->query("CREATE TABLE `$table` (
 	  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -159,7 +157,6 @@ if( ! function_exists('lebouchon_submit_landing') ):
 	  PRIMARY KEY (`id`)
 	) ENGINE=InnoDB DEFAULT CHARSET=latin1;");
 								
-							endif;
 						endif;					
 						
 						/* Insert to DB */
