@@ -80,7 +80,7 @@ add_action( 'after_setup_theme', 'lebouchon_setup' );
 
 if( ! function_exists('lebouchon_setup')){
 	
-	function xenba_setup(){	
+	function lebouchon_setup(){	
 		
 		add_editor_style();
 		
