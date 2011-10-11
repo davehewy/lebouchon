@@ -1,0 +1,443 @@
+ @font-face {font-family: 'MuseoSans-700';src: url('assets/fonts/museo/eot/style_159306.eot');src: url('assets/fonts/museo/eot/style_159306.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159306.woff') format('woff'),url('assets/fonts/museo/ttf/style_159306.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159306.svg#MuseoSans-700') format('svg');}
+ @font-face {font-family: 'MuseoSans-300';src: url('assets/fonts/museo/eot/style_159305.eot');src: url('assets/fonts/museo/eot/style_159305.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159305.woff') format('woff'),url('assets/fonts/museo/ttf/style_159305.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159305.svg#MuseoSans-300') format('svg');}
+ @font-face {font-family: 'MuseoSans-900Italic';src: url('assets/fonts/museo/eot/style_159304.eot');src: url('assets/fonts/museo/eot/style_159304.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159304.woff') format('woff'),url('assets/fonts/museo/ttf/style_159304.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159304.svg#MuseoSans-900Italic') format('svg');}
+ @font-face {font-family: 'MuseoSans-500';src: url('assets/fonts/museo/eot/style_159303.eot');src: url('assets/fonts/museo/eot/style_159303.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159303.woff') format('woff'),url('assets/fonts/museo/ttf/style_159303.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159303.svg#MuseoSans-500') format('svg');}
+ @font-face {font-family: 'MuseoSans-100';src: url('assets/fonts/museo/eot/style_159302.eot');src: url('assets/fonts/museo/eot/style_159302.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159302.woff') format('woff'),url('assets/fonts/museo/ttf/style_159302.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159302.svg#MuseoSans-100') format('svg');}
+ @font-face {font-family: 'MuseoSans-700Italic';src: url('assets/fonts/museo/eot/style_159301.eot');src: url('assets/fonts/museo/eot/style_159301.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159301.woff') format('woff'),url('assets/fonts/museo/ttf/style_159301.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159301.svg#MuseoSans-700Italic') format('svg');}
+ @font-face {font-family: 'MuseoSans-300Italic';src: url('assets/fonts/museo/eot/style_159307.eot');src: url('assets/fonts/museo/eot/style_159307.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159307.woff') format('woff'),url('assets/fonts/museo/ttf/style_159307.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159307.svg#MuseoSans-300Italic') format('svg');}
+ @font-face {font-family: 'MuseoSans-100Italic';src: url('assets/fonts/museo/eot/style_159308.eot');src: url('assets/fonts/museo/eot/style_159308.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159308.woff') format('woff'),url('assets/fonts/museo/ttf/style_159308.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159308.svg#MuseoSans-100Italic') format('svg');}
+ @font-face {font-family: 'MuseoSans-500Italic';src: url('assets/fonts/museo/eot/style_159309.eot');src: url('assets/fonts/museo/eot/style_159309.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159309.woff') format('woff'),url('assets/fonts/museo/ttf/style_159309.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159309.svg#MuseoSans-500Italic') format('svg');}
+ @font-face {font-family: 'MuseoSans-900';src: url('assets/fonts/museo/eot/style_159310.eot');src: url('assets/fonts/museo/eot/style_159310.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159310.woff') format('woff'),url('assets/fonts/museo/ttf/style_159310.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159310.svg#MuseoSans-900') format('svg');}
+
+
+/* Reset */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol, ul {
+  list-style: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+header,
+section,
+footer,
+article,
+aside {
+  display: block;
+}
+
+/*general styles*/
+
+img {
+	border: none;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	line-height: 125%;
+	font-family: MuseoSans-300;
+	color: #464548;
+	background-image: url(assets/images/banner-repeat.png);
+	background-repeat: repeat-x;
+	background-color: #f6f3e9;
+}
+
+h1, h2, h4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 125%;
+	font-weight: normal;
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 20px 0;
+	padding: 0;
+	line-height: 135%;
+}
+
+a {
+	text-decoration: none;
+	color: #464548;
+}
+
+a:hover {
+	color: #615862;
+	text-decoration: underline;
+}
+
+
+/*Header banner styles*/
+
+#headerwrapper ul {
+	float: right;
+	margin: 175px 30px 0 0;
+	padding: 0;
+	width: 235px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 125%;
+}
+
+#headerwrapper ul li {
+	text-align: center;
+	margin: 5px auto;
+	padding: 0;
+	width: 200px;
+	list-style: none;
+	line-height: 125%;
+}
+
+#bodywrapper {
+	 width: 980px;
+	 margin: 0 auto;
+	 overflow: auto;
+}
+ 
+#headerwrapper {
+	width: 980px;
+	height: 429px;
+	background-image: url(assets/images/Le-Bouchon-banner-text.png)
+}
+
+
+/*Container styles*/
+
+#container {
+	width: 638px;
+	height: auto;
+	margin: 0;
+	padding: 0 0 0 30px;
+	float: left;
+}
+
+#intro-text {
+	font-size: 125%;
+	line-height: 135%;
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#main-text {
+	margin: 30px 0 0 0;
+	padding: 0;
+	height: auto;
+	width: 638px;
+	float: left;
+}
+
+#main-text p {
+	margin: 0;
+	padding: 0;
+}
+
+#main-text img {
+	margin: 0 40px 0 0;
+	padding: 0;
+	float: left;
+}
+
+ul#left{
+	list-style-image: url(assets/images/bullet-gold.png);
+	list-style-position: inside;
+	width: 180px;
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+ul#right {
+	list-style-image: url(assets/images/bullet-gold.png);
+	list-style-position: outside;
+	width: 210px;
+	float: left;
+	display: block;
+	margin: 0 0 20px 40px;
+	padding: 0;
+}
+
+ul#left li, ul#right li {
+	margin: 0 0 6px 0;
+}
+
+/*Right Sidebar styles*/
+
+#right-column {
+	width: 235px;
+	margin: 0 30px 0 0;
+	padding: 0;
+	float: right;
+}
+
+#right-column h3 {
+	width: 180px;
+	margin: 0 auto;
+	padding: 8px 0;
+	text-align: center;
+	font-size: 125%;
+	line-height: 125%;
+	font-weight: normal;
+}
+
+#facebook a{
+	display: block;
+	background: url(assets/images/facebook.png) no-repeat;
+	height:65px;
+	width: 235px;
+}
+
+#facebook a:hover{
+	background: url(assets/images/facebook-hover.png) no-repeat;
+}
+
+#jobs a:hover img{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+}
+
+#facebook, #jobs {
+	margin: 30px 0;
+	padding: 0;
+}
+
+#signup-box {
+
+}
+
+#sign_up_box{
+	margin: 0;
+	padding: 0;
+}
+
+#sign_up_box .top{
+	background: url(assets/images/sign-up-box-top.png) no-repeat;
+	height:11px;
+	width:235px;
+}
+
+#sign_up_box .bottom{
+	background: url(assets/images/sign-up-box-bottom.png) no-repeat;
+	height: 11px;
+	width: 235px;	
+}
+
+#sign_up_box .content{
+	height: 215px;
+	background-color: #c1bdc3;
+	margin: 0;
+	padding: 0;
+}
+
+#sign_up_box .content table{
+	width:211px;
+	margin: 0px 12px;
+}
+
+#sign_up_box input.text {
+	font-size: 87%;
+	width:200px;
+	height: 22px;
+	background-color: #f6f3e9;
+	margin: 0;
+	padding: 7px 0 7px 10px;
+	margin-bottom: 13px;
+	border: 1px solid #615862;
+}
+
+#sign_up_box input.clever{
+	display: none;
+}
+
+button.news_submit{
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #f6f3e9;
+	text-align: center;
+	font-size: 112%;
+	background-color: #615862;
+	margin: 0;
+	padding: 5px 0;
+	width: 213px;
+	cursor: pointer;
+}
+
+button.news_submit:hover {
+	background-color: #464548;
+	text-decoration: none;
+}
+
+#map {
+	background-image: url(assets/images/le-bouchon-map.png);
+	background-repeat: no-repeat;
+	height: 170px;
+	width: 235px;
+	margin: 0;
+	padding: 15px 0 0 0;
+}
+
+#map:hover{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;	
+}
+
+#map-title {
+	margin: 0 auto;
+	padding: 5px 0;
+	color: #f6f3e9;
+	font-size: 112%;
+	background-color: #615862;
+	width: 205px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: center;	
+}
+
+
+/*Footer styles*/
+
+#footerwrapper {
+	width: 100%;
+	margin: 40px 0 20px 0;
+	height: 223px;
+	background-color: #e5e2db;
+	float: left;
+}
+
+#footer {
+	width: 980px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#footer-left {
+	margin: 53px 0 0 47px;
+	padding: 0;
+	float: left;
+}
+
+#footer-middle {
+	margin: 18px 0 0 56px;
+	padding: 0;
+	width: 440px;
+	float: left;
+}
+
+#footer-middle h3 {
+	font-family: MuseoSans-300;
+	font-size: 125%;
+	line-height: 125%;
+	font-weight: normal;
+}
+
+#footer-middle img{
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+#footer-right {
+	margin: 28px 30px 0 0;
+	padding: 0;
+	float: right;
+}
+
+#copyrightwrapper {
+	width: 100%;
+	height: 50px;
+	clear: left;
+}
+
+#copyright-text {
+	width: 750px;
+	margin: 0 auto;
+	padding: 0 0 0 230px;
+}
+
+.crisp-design {
+	float: right;
+	margin-right: 30px;
+}
+
+.crisp-design a:hover {
+	color: #2ebef0;
+	text-decoration: underline;
+}
+
+.success_text{
+	padding-left: 247px;
+}
