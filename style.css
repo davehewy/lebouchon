@@ -314,8 +314,8 @@ ul#left li, ul#right li {
 	background-color: #f6f3e9;
 	margin: 0;
 	padding: 7px 0 7px 10px;
-	margin-bottom: 13px;
-	border: 1px solid #615862;
+	margin-bottom: 15px;
+	border:none;
 }
 
 #sign_up_box input.clever{
@@ -392,7 +392,7 @@ button.news_submit:hover {
 }
 
 #footer-middle {
-	margin: 18px 0 0 56px;
+	margin: 38px 0 0 56px;
 	padding: 0;
 	width: 440px;
 	float: left;
@@ -440,4 +440,8 @@ button.news_submit:hover {
 
 .success_text{
 	padding-left: 247px;
+}
+
+em{
+	font-family: 'MuseoSans-300Italic'; 
 }

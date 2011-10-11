@@ -21,7 +21,7 @@ get_header(); ?>
 <div id="intro-text">Welcome to Le Bouchon Brasserie & Hotel, a grade II listed Georgian building which has recently undergone an extensive refurbishment programme restoring the building to its former glory.
 </div>
 
-    <div id="main-text"> <a href="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Le-Bouchon-menu.png" rel="lightbox" title="Our menu"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/sample-menu.png" width="160" height="167" alt="Click to view our sample menu" /></a>
+    <div id="main-text"> <a href="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Le-Bouchon-menu.png" rel="lightbox"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/sample-menu.png" width="160" height="167" /></a>
     <h2>Brasserie</h2>
     <p>Our restaurant offers a blend of both French and English Cuisine, catering for 100 diners set in a relaxed and intimate environment. Enjoy a meal from either our à la carte menu in the main restaurant or a lighter meal in the courtyard bar. During the summer months enjoy a drink and a meal in our secluded walled courtyard.</p>
 	</div>
