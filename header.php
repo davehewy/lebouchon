@@ -56,7 +56,6 @@ jQuery("#news_form").submit(function(){
 	var email = jQuery("#news_email").val();
 	if(name=='' || email == '' || name == 'Name:' || email == 'Email:' || name.length<3){
 		if(email == '' || email == 'Email:'){
-			alert(email);
 			jQuery("#news_email").css("border","1px solid red");
 		}
 		

@@ -15,11 +15,11 @@ get_header(); ?>
         <li><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/header-bullet.png" width="24" height="14" alt="•" /></li>
 		<li>Modern English French cuisine</li>
 	</ul>
-</div>
+	</div>
 
 	<div id="container">
-<div id="intro-text">Welcome to Le Bouchon Brasserie & Hotel, a grade II listed Georgian building which has recently undergone an extensive refurbishment programme restoring the building to its former glory.
-</div>
+	<div id="intro-text">Welcome to Le Bouchon Brasserie & Hotel, a grade II listed Georgian building which has recently undergone an extensive refurbishment programme restoring the building to its former glory.
+	</div>
 
     <div id="main-text"> <a href="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Le-Bouchon-menu.png" rel="lightbox"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/sample-menu.png" width="160" height="167" /></a>
     <h2>Brasserie</h2>
@@ -29,8 +29,7 @@ get_header(); ?>
     <div id="main-text">
     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/brasserie-image.png" width="160" height="109" alt="Brasserie food" />
 <h2>Boutique Hotel</h2>
-<p>14 individually styled en-suite boutique bedrooms each with their own character. All rooms have as standard a 32" flat screen LED TV, telephone and wifi access. Here is a sample of our room rates:</p>
-	</div>
+<p>14 individually styled en-suite boutique bedrooms each with their own character. All rooms have as standard a 32" flat screen LED TV, telephone and wifi access. Here is a sample of our room rates:</p>	</div>
     
     <div id="main-text">
     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/hotel-room-image.png" width="160" height="109" alt="Hotel accomodation" />
@@ -52,7 +51,7 @@ get_header(); ?>
     <div id="main-text">
     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/functions-image.png" width="160" height="109" alt="Functions" />
     <h2>Functions</h2>
-    <p>Le Bouchon is available for your very own private or corporate function. Enjoy full use of all bar and restaurant facilities reserved exclusively for you and your guests together with overnight use of the 14 en-suite bedrooms.</p>
+   	<p>Le Bouchon is available for your very own private or corporate function. Enjoy full use of all bar and restaurant facilities reserved exclusively for you and your guests together with overnight use of the 14 en-suite bedrooms.</p>
     </div>
     </div>
 

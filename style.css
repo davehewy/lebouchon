@@ -1,4 +1,10 @@
- @font-face {font-family: 'MuseoSans-700';src: url('assets/fonts/museo/eot/style_159306.eot');src: url('assets/fonts/museo/eot/style_159306.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159306.woff') format('woff'),url('assets/fonts/museo/ttf/style_159306.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159306.svg#MuseoSans-700') format('svg');}
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
+
+@font-face {font-family: 'MuseoSans-700';src: url('assets/fonts/museo/eot/style_159306.eot');src: url('assets/fonts/museo/eot/style_159306.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159306.woff') format('woff'),url('assets/fonts/museo/ttf/style_159306.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159306.svg#MuseoSans-700') format('svg');}
  @font-face {font-family: 'MuseoSans-300';src: url('assets/fonts/museo/eot/style_159305.eot');src: url('assets/fonts/museo/eot/style_159305.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159305.woff') format('woff'),url('assets/fonts/museo/ttf/style_159305.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159305.svg#MuseoSans-300') format('svg');}
  @font-face {font-family: 'MuseoSans-900Italic';src: url('assets/fonts/museo/eot/style_159304.eot');src: url('assets/fonts/museo/eot/style_159304.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159304.woff') format('woff'),url('assets/fonts/museo/ttf/style_159304.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159304.svg#MuseoSans-900Italic') format('svg');}
  @font-face {font-family: 'MuseoSans-500';src: url('assets/fonts/museo/eot/style_159303.eot');src: url('assets/fonts/museo/eot/style_159303.eot?#iefix') format('embedded-opentype'),url('assets/fonts/museo/woff/style_159303.woff') format('woff'),url('assets/fonts/museo/ttf/style_159303.ttf') format('truetype'),url('assets/fonts/museo/svg/style_159303.svg#MuseoSans-500') format('svg');}
@@ -15,6 +21,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-size: 13px;
 }
 h1,
 h2,
@@ -100,12 +107,11 @@ img {
 	border: none;
 }
 
-body {
+html, body {
 	margin: 0;
 	padding: 0;
-	font-size: 1em;
-	line-height: 125%;
-	font-family: MuseoSans-300;
+	font-size: 13px;
+	font-family: 'MuseoSans-300', serif;
 	color: #464548;
 	background-image: url(assets/images/banner-repeat.png);
 	background-repeat: repeat-x;
@@ -114,16 +120,10 @@ body {
 
 h1, h2, h4 {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 125%;
+	font-size: 22px;
 	font-weight: normal;
 	margin: 0 0 8px 0;
 	padding: 0;
-}
-
-p {
-	margin: 0 0 20px 0;
-	padding: 0;
-	line-height: 135%;
 }
 
 a {
@@ -145,7 +145,7 @@ a:hover {
 	padding: 0;
 	width: 235px;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 125%;
+	font-size: 18px;
 }
 
 #headerwrapper ul li {
@@ -154,7 +154,7 @@ a:hover {
 	padding: 0;
 	width: 200px;
 	list-style: none;
-	line-height: 125%;
+	line-height: 1.45;
 }
 
 #bodywrapper {
@@ -181,11 +181,14 @@ a:hover {
 }
 
 #intro-text {
-	font-size: 125%;
-	line-height: 135%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 21px;
+	line-height: 28px;
+	font-weight: normal;
+	font-style: normal;
 	margin: 0;
 	padding: 0;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	display: block;
 }
 
 #main-text {
@@ -199,8 +202,11 @@ a:hover {
 #main-text p {
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
 }
-
+	
 #main-text img {
 	margin: 0 40px 0 0;
 	padding: 0;
@@ -215,6 +221,7 @@ ul#left{
 	display: block;
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
 }
 
 ul#right {
@@ -225,6 +232,7 @@ ul#right {
 	display: block;
 	margin: 0 0 20px 40px;
 	padding: 0;
+	font-size: 16px;
 }
 
 ul#left li, ul#right li {
@@ -245,8 +253,8 @@ ul#left li, ul#right li {
 	margin: 0 auto;
 	padding: 8px 0;
 	text-align: center;
-	font-size: 125%;
-	line-height: 125%;
+	font-size: 16px;
+	line-height: 23px;
 	font-weight: normal;
 }
 
@@ -274,10 +282,6 @@ ul#left li, ul#right li {
 	padding: 0;
 }
 
-#signup-box {
-
-}
-
 #sign_up_box{
 	margin: 0;
 	padding: 0;
@@ -285,14 +289,18 @@ ul#left li, ul#right li {
 
 #sign_up_box .top{
 	background: url(assets/images/sign-up-box-top.png) no-repeat;
-	height:11px;
+	height:10px;
 	width:235px;
+	margin: 0;
+	padding: 0;
 }
 
 #sign_up_box .bottom{
 	background: url(assets/images/sign-up-box-bottom.png) no-repeat;
-	height: 11px;
+	height: 10px;
 	width: 235px;	
+	margin: 0;
+	padding: 0;
 }
 
 #sign_up_box .content{
@@ -300,6 +308,7 @@ ul#left li, ul#right li {
 	background-color: #c1bdc3;
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
 }
 
 #sign_up_box .content table{
@@ -308,7 +317,7 @@ ul#left li, ul#right li {
 }
 
 #sign_up_box input.text {
-	font-size: 87%;
+	font-size: 14px;
 	width:200px;
 	height: 22px;
 	background-color: #f6f3e9;
@@ -327,7 +336,7 @@ button.news_submit{
 	font-family: Georgia, "Times New Roman", Times, serif;
 	color: #f6f3e9;
 	text-align: center;
-	font-size: 112%;
+	font-size:18px;
 	background-color: #615862;
 	margin: 0;
 	padding: 5px 0;
@@ -398,6 +407,11 @@ button.news_submit:hover {
 	float: left;
 }
 
+#footer-middle p{
+	font-size: 16px;
+	line-height: 22px;	
+}
+
 #footer-middle h3 {
 	font-family: MuseoSans-300;
 	font-size: 125%;
@@ -427,6 +441,7 @@ button.news_submit:hover {
 	width: 750px;
 	margin: 0 auto;
 	padding: 0 0 0 230px;
+	font-size: 16px;
 }
 
 .crisp-design {
