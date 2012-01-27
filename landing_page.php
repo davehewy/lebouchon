@@ -11,9 +11,9 @@ get_header(); ?>
     <ul>
     	<li>14 boutique rooms</li>
         <li><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/header-bullet.png" width="24" height="14" alt="•" /></li>
-		<li>Hotel available for private and corporate functions</li>
+		<li>Hotel available for<br>private and<br>corporate functions</li>
         <li><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/header-bullet.png" width="24" height="14" alt="•" /></li>
-		<li>Modern English French cuisine</li>
+		<li>Modern English<br>French cuisine</li>
 	</ul>
 	</div>
 

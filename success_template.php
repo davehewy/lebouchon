@@ -9,9 +9,9 @@ get_header(); ?>
     <ul>
     	<li>14 boutique rooms</li>
         <li><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/header-bullet.png" width="24" height="14" alt="•" /></li>
-		<li>Hotel available for private and corporate functions</li>
+		<li>Hotel available for<br>private and<br>corporate functions</li>
         <li><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/header-bullet.png" width="24" height="14" alt="•" /></li>
-		<li>Modern English French cuisine</li>
+		<li>Modern English<br>French cuisine</li>
 	</ul>
 </div>
 
@@ -19,7 +19,7 @@ get_header(); ?>
 
 <h1>Success!</h1>
 
-<p>Thank you for sending us your details.<br>Well will keep you updated with our latest news.<br><br>Dèvide, General Manager – Le Bouchon</p>
+<p>Thank you for sending us your details.<br>Well will keep you updated with our latest news.<br><br>Mr. David Anthony – General Manager, Le Bouchon</p>
 
 <a href="<?php echo home_url(); ?>">&laquo; click here to return to our home page</a>
 

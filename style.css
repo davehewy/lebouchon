@@ -455,6 +455,8 @@ button.news_submit:hover {
 }
 
 .success_text{
+	font-size: 16px;
+	line-height: 20px;
 	padding-left: 247px;
 }
 
