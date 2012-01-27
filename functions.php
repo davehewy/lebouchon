@@ -11,6 +11,19 @@
 include_once("theme_config.php");
 
 add_action( 'after_setup_theme', 'lebouchon_setup' ); 
+add_action( 'init', 'lebouchon_init');
+
+/* Custom Meta */
+require_once(TEMPLATEPATH . '/includes/custom_meta.php');
+
+if(!function_exists('lebouchon_init')){
+	function lebouchon_init(){
+		
+		$lebouchon_custom_meta = new Lebouchon_Meta_Handler;
+		add_action('add_meta_boxes',array(&$lebouchon_custom_meta,'menu_create'));
+				
+	}
+}
  
 
 /* helpers 
@@ -34,38 +47,38 @@ add_action( 'after_setup_theme', 'lebouchon_setup' );
 	endif;
 	
 	REGISTER A POST TYPE
-	
-	register_post_type( 'services',
+*/	
+	register_post_type( 'menu',
 			array(
 				'labels' => array(
-					'name' => __( 'Services' ),
-					'singular_name' => __( 'Services' ),
-					'add_new' => __( 'Add new' ),
-					'add_new_item' => __( 'Add New Service' ),
+					'name' => __( 'Menu Items' ),
+					'singular_name' => __( 'Menu Items' ),
+					'add_new' => __( 'Add New Menu Item' ),
+					'add_new_item' => __( 'Add New Menu Item' ),
 					'edit' => __( 'Edit' ),
-					'edit_item' => __( 'Edit Service' ),
-					'new_item' => __( 'New Service' ),
-					'view' => __( 'View Service' ),
-					'view_item' => __( 'View Service' ),
-					'search_items' => __( 'Search Services' ),
-					'not_found' => __( 'No services found' ),
-					'not_found_in_trash' => __( 'No services found in Trash' ),
-					'parent' => __( 'Parent services' ),
+					'edit_item' => __( 'Edit Menu Item' ),
+					'new_item' => __( 'New Menu Item' ),
+					'view' => __( 'View Menu Item' ),
+					'view_item' => __( 'View Menu Item' ),
+					'search_items' => __( 'Search Menu Items' ),
+					'not_found' => __( 'No menu items found' ),
+					'not_found_in_trash' => __( 'No menu items found in Trash' ),
+					'parent' => __( 'Parent menu items' ),
 				),
 				'public' => true,
 				'query_var' => true,
 				'menu_position' => 5,
 				'show_ui' => true,
-				'supports' => array('title','editor','thumbnail','custom-fields','page-attributes','revisions'),
+				'supports' => array('title','thumbnail','page-attributes','revisions'),
 				'publicly_queryable' => true,
 				'exclude_from_search' => true,
 				'hierarchical' => true
 			)
 		);	
 		
-	CUSTOM TAXONOMY
+	/* CUSTOM TAXONOMY */
 
-	register_taxonomy( 'service_category', 'services', array( 'hierarchical' => true, 'label' => __('Service Category', 'series'), 'query_var' => 'service_category', 'rewrite' => array( 'slug' => 'service_category' ) ) );	
+	register_taxonomy( 'menu_category', 'menu', array( 'hierarchical' => true, 'label' => __('Menu Category', 'series'), 'query_var' => 'menu_category', 'rewrite' => array( 'slug' => 'menu_category' ) ) );	
 
 
 // =========== 
