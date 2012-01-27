@@ -43,6 +43,8 @@
 		wp_head();
 	?>
 
+	<script src="<?=bloginfo('template_url')?>/assets/js/menu-hover.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 function validateEmail(elementValue){  
    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
